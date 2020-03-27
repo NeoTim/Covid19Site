@@ -1,0 +1,35 @@
+{
+    "appName": "Covid19 Info Site",
+    "autoStartSim": false,
+    "csvInFolder": "../rawData/in/",
+    "csvOutFolder": " ../rawData/out/",
+    "simLoopInterval": 5500,
+    "csvExportInterval": 10000,
+    "map": {
+        "queryCenterPoint": [41.979246, -87.906914],
+        "uiCenterPoint": [35.260898, -116.687073],
+        "queryOffset": 1
+    },    
+    "csvFiles": {
+        "stateCenters": {
+            "enabled": true,
+            "fileIn": "state-centers.csv",
+            "fileOut": "",
+            "columns": "id,latitude,longitude,name",
+            "simInterval": 0,
+            "simType": "none",
+            "writeToCsv": false,
+            "laneUri": "/aggregation/stateCenters"
+        },
+        "testingLocations": {
+            "enabled": true,
+            "fileIn": "testingSites.json",
+            "fileOut": "",
+            "columns": "id,latitude,longitude,name",
+            "simInterval": 0,
+            "simType": "none",
+            "writeToCsv": false,
+            "laneUri": "/aggregation/testingSites"
+        }
+    }
+}
